@@ -56,7 +56,7 @@ public class ExpenseServiceImpl implements ExpenseService {
 		//Buggy Code(ExpenseControllerTest.testDeleteExpense())
 		//log.info("Debug delete");
 		
-		Correct Code
+		//Correct Code
 		expenseRepository.deleteById(expenseId);
 		expenseRepository.flush();
 	}
