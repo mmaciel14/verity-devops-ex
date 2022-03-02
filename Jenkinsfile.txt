@@ -1,30 +1,22 @@
 pipeline {
     agent any
     stages {
-		
-	
 		// ******ALL CODE TO BE ADDED BELOW THIS COMMENT******
 		
-			
-			
 //Code starts for stage Clean
         stage('Clean') {
             steps {
                 sh 'mvn clean'
             }
         }
-//Code ends for stage Clean
-
-		
+//Code ends for stage Clean		
 //Code starts for stage PMD
 		stage('PMD') {
             steps {
                 sh 'mvn site'
             }
         }
-		//Code ends for stage PMD
-		
-		
+		//Code ends for stage PMD		
 		//Code starts for stage Compile
 		stage('Compile') {
             steps {
@@ -32,8 +24,7 @@ pipeline {
             }
         }
 		//Code ends for stage Compile
-		
-		
+			
 		//Code starts for stage Unit Test
         stage('Unit Test') {
             steps {
@@ -46,7 +37,6 @@ pipeline {
             }
         }
 
-
-//coments
-  }
-  }
+// ******ALL CODE TO BE ADDED ABOVE THIS COMMENT******
+    }
+}
